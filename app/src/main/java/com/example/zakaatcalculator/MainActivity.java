@@ -34,5 +34,13 @@ public class MainActivity extends AppCompatActivity {
 
     public void reset(View view) {
         et1.setText(String.valueOf(0));
+        et2.setText(String.valueOf(0));
+        et3.setText(String.valueOf(0));
+        et4.setText(String.valueOf(0));
+        et5.setText(String.valueOf(0));
+        et6.setText(String.valueOf(0));
+        et7.setText(String.valueOf(0));
+        et8.setText(String.valueOf(0));
+        resultTv.setText(String.valueOf(0));
     }
 }
