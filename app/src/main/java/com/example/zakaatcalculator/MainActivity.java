@@ -3,12 +3,28 @@ package com.example.zakaatcalculator;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-
+    EditText et1;
+    EditText et2;
+    EditText et3;
+    EditText et4;
+    EditText et5;
+    EditText et6;
+    EditText et7;
+    EditText et8;
+    TextView resultTv;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        et1 = findViewById(R.id.et1);
+    }
+
+    public void reset(View view) {
+        et1.setText(String.valueOf(0));
     }
 }
