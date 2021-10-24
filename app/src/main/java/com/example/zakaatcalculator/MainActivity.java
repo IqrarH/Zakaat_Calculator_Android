@@ -45,6 +45,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void calculate(View view) {
+        int finalValue = 0;
+        if(et1.getText().toString() != null){
+            finalValue += Integer.parseInt(et1.getText().toString());
+        }
 
+        resultTv.setText(String.valueOf(finalValue));
     }
 }
