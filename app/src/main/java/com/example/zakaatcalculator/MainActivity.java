@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.text.DecimalFormat;
+
 public class MainActivity extends AppCompatActivity {
     EditText et1;
     EditText et2;
@@ -70,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
         if(!et8.getText().toString().isEmpty()){
             finalValue -= Float.parseFloat(et8.getText().toString());
         }
-
-        resultTv.setText(String.valueOf(finalValue * 0.025));
+        DecimalFormat numberFormat = new DecimalFormat("#.00");
+        resultTv.setText(String.valueOf(numberFormat.format(finalValue * 0.025)));
     }
 }
