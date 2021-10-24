@@ -46,10 +46,31 @@ public class MainActivity extends AppCompatActivity {
 
     public void calculate(View view) {
         int finalValue = 0;
-        if(et1.getText().toString() != null){
+        if(!et1.getText().toString().isEmpty()){
             finalValue += Integer.parseInt(et1.getText().toString());
         }
+        if(!et2.getText().toString().isEmpty()){
+            finalValue += Integer.parseInt(et2.getText().toString());
+        }
+        if(!et3.getText().toString().isEmpty()){
+            finalValue += Integer.parseInt(et3.getText().toString());
+        }
+        if(!et4.getText().toString().isEmpty()){
+            finalValue += Integer.parseInt(et4.getText().toString());
+        }
+        if(!et5.getText().toString().isEmpty()){
+            finalValue += Integer.parseInt(et5.getText().toString());
+        }
+        if(!et6.getText().toString().isEmpty()){
+            finalValue += Integer.parseInt(et6.getText().toString());
+        }
+        if(!et7.getText().toString().isEmpty()){
+            finalValue -= Integer.parseInt(et7.getText().toString());
+        }
+        if(!et8.getText().toString().isEmpty()){
+            finalValue -= Integer.parseInt(et8.getText().toString());
+        }
 
-        resultTv.setText(String.valueOf(finalValue));
+        resultTv.setText(String.valueOf(finalValue * 0.025));
     }
 }
