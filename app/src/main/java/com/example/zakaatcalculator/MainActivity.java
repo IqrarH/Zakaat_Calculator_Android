@@ -43,4 +43,8 @@ public class MainActivity extends AppCompatActivity {
         et8.setText(String.valueOf(0));
         resultTv.setText(String.valueOf(0));
     }
+
+    public void calculate(View view) {
+
+    }
 }
