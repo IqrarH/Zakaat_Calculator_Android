@@ -22,6 +22,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         et1 = findViewById(R.id.et1);
+        et2 = findViewById(R.id.et2);
+        et3 = findViewById(R.id.et3);
+        et4 = findViewById(R.id.et4);
+        et5 = findViewById(R.id.et5);
+        et6 = findViewById(R.id.et6);
+        et7 = findViewById(R.id.et7);
+        et8 = findViewById(R.id.et8);
+        resultTv = findViewById(R.id.zakatTv);
     }
 
     public void reset(View view) {
